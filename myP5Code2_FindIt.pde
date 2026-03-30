@@ -1,8 +1,10 @@
+
+
 //Background Toilets & Plungers
 var toiletXPos = [];
 var toiletYPos = [];
 var toilet = "🚽🪠";
-var toiletTotal = 500;
+var toiletTotal = 130;
 
 //Background Amenity Symbols
 var amenityXpos = [];
@@ -13,25 +15,45 @@ var amenityTotal = 80;
 //Finding Pennies 
 var penny = [];
 var pennyYPos = [];
-var penny = "🪙";
+var penny = "💰";
 var pennyTotal = 7;
 var pennyFound = 0;
 
+
+
 setup = function() {
    size(600, 450); 
+//Array Comment
+var myPrivilege = ["Its A Privilege to Pee", "You Come here And Pay A Fee", "I'm A Business Gal, You See", "I Sell The Privilege to Pee",];
+
+fill(244, 241, 51)
+text(myPrivilege[0], 10, 30);
+text(myPrivilege[1], 10, 80);
+text(myPrivilege[2], 10, 130);
+text(myPrivilege[4], 10, 180);
+text(myPrivilege[5], 10, 180);
+
+textSize(50);
 
    reset();
 }
 
 draw = function(){   
-
+   display();
+   
    if(keyPressed){
     if(key == 'r'){
       reset();
     }
+
+    if(key == 'p'){
+      textSize(120)
+      text("💵🚽", 300, 300);
+    }
+  
    }
 
-  display();
+  
 }
 
 
@@ -72,13 +94,10 @@ var display = function(){
   fill(255,255,255);
   text("Find The " + penny + "s   |   " + penny + " " + pennyFound + "/" + pennyTotal, 0, 425);
 
-  if(pennyFound == pennyTotal && keyPressed){
+  if(pennyFound == pennyTotal){
     fill(0, 200, 200);
     textSize(25);
-    text("Press 'r' to restart \nthe game", 50, 200);
-    if (key == 'c'){
-      text("💵")
-    }
+    text("She's Ready For Business! Press 'r' to restart \nthe game (Press P to Pay and Use the Amenity)", 50, 200);
   }
 }
 
