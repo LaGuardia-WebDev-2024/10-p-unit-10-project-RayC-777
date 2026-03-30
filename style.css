@@ -1,5 +1,5 @@
 body {
-  background-image: url("Sprinkles.jpg");
+  background-image: url("https://img.freepik.com/premium-vector/plunger-seamless-pattern-white-background-toilet-theme-illustration_385450-702.jpg");
   background-color: hsl(213, 85%, 92%);
   background-blend-mode: overlay;
   text-align: center;
@@ -7,6 +7,9 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; 
   font-family: Georgia, serif;
+  color: rgb(244,241,51);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'>💧</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
 
 html{
@@ -14,17 +17,10 @@ html{
   width: 100%;
 }
 
-#myCanvas1 {
-  border: 1px solid black;
-  background-image: url("supermarket-interior-shelf_165488-3982.avif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 #myCanvas2 {
-  border: 1px solid black;
-  border-radius: 30px;
+  border: 3px solid rgb(245, 241, 31);
+  border-radius: 50px;
 }
 
 
