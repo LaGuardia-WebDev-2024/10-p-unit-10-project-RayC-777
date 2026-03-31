@@ -1,5 +1,3 @@
-
-
 //Background Toilets & Plungers
 var toiletXPos = [];
 var toiletYPos = [];
@@ -23,7 +21,7 @@ var pennyFound = 0;
 
 setup = function() {
    size(600, 450); 
-//Array Comment
+   //Array Comment
 var myPrivilege = ["Its A Privilege to Pee", "You Come here And Pay A Fee", "I'm A Business Gal, You See", "I Sell The Privilege to Pee",];
 
 fill(244, 241, 51)
@@ -34,7 +32,6 @@ text(myPrivilege[4], 10, 180);
 text(myPrivilege[5], 10, 180);
 
 textSize(50);
-
    reset();
 }
 
@@ -47,12 +44,25 @@ draw = function(){
     }
 
     if(key == 'p'){
-      textSize(120)
+      textSize(120);
       text("💵🚽", 300, 300);
+      textSize(50);
+      fill(236, 170, 50);
+      text("PAY UR FEE!", 300, 350);
     }
   
    }
+var x = 0;
+while(x < 585){
+  text("🚾", x, 396);
+  x += 25;
+}
 
+var x = 0;
+while(x < 585){
+  text("🚾", x, 19);
+  x += 25;
+}
   
 }
 
@@ -126,3 +136,5 @@ var reset = function(){
     pennyYPos.push(random(0,400));
   }
 }
+
+
